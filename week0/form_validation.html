@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+table{
+border:2px dashed;
+background-color:#fbc;
+padding:10px;
+}
+</style>
+<script type="text/javascript" src="validation.js"></script>
+</head>
+<body>
+<form align="center" name="registration" onsubmit="return validate()">
+<table align="center">
+<caption color='red'><h3>Register Here!!</h3></caption>
+<tr><td>First Name:</td><td><input type="text" name="firstname" required></td></tr>
+<tr><td>Last Name:</td><td><input type="text" required></td></tr>
+<tr><td>Password:</td><td><input type="password" id="pwd" class="pwd" onkeydown='check()'></td><td><span id="msg"></span></td></tr>
+<tr><td>Re-Type Password:</td><td><input type="password" class="pwd" required></td><td><span id="msg2"></span></td></tr>
+<tr><td>Email</td><td><input type="Email" required></td></tr>
+<tr><td>Upload Resume:</td><td><input type="file" required></td></tr>
+</table>
+<input type="submit">
+<input type="reset">
+</form>
+</body>
+</html>

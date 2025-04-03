@@ -1,0 +1,31 @@
+***books.xml****
+<?xml version="1.0"?>
+<!DOCTYPE bookstore [
+<!ELEMENT bookstore (book+)>
+<!ELEMENT book (title, author, isbn, publisher, edition, price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT edition (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+]>
+<bookstore>
+    <book>
+        <title>The Great Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <isbn>9780743273565</isbn>
+        <publisher>Charles Scribner's Sons</publisher>
+        <edition>First Edition</edition>
+        <price>$10.99</price>
+    </book>
+    <book>
+        <title>The Catcher in the Rye</title>
+        <author>J.D. Salinger</author>
+        <isbn>9780316769488</isbn>
+        <publisher>Little, Brown and Company</publisher>
+        <edition>First Edition</edition>
+        <price>$11.99</price>
+    </book>
+</bookstore>
+

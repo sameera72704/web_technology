@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Methods and Events Demo</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #007bff;
+     }
+  </style>
+  <script>
+    $(document).ready(function(){
+      $("#hide-button").click(function(){
+        $("h2").hide();
+      });
+      $("#click-me").click(function(){
+        alert("You clicked the button!");
+      });
+      $("#animate-button").click(function(){
+        $(".box").animate({
+          width: '200px',
+          height: '200px',
+          opacity: '0.5'
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <h2>This is a heading</h2>
+  <p>
+    <button id="hide-button">Hide Heading</button> 
+    <button id="click-me">Click Me</button> 
+    <button id="animate-button">Animate</button> 
+  </p>
+  <div class="box"></div> 
+</body>
+</html>

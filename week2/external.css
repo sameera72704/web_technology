@@ -1,0 +1,29 @@
+****external.css****
+body {
+    font-family: Arial, sans-serif;
+    color: #ABCD22;
+    background-image: url('car.jpg');
+    background-repeat: repeat;
+} 
+h1 {
+    color: #FF5733;
+}
+p {
+    font-style: italic;
+}
+p.background-image {
+    background-image: url('element-car.jpg');
+    padding: 10px;
+}
+a:link,a:visited {
+    text-decoration: none;
+    color: #007BFF;
+}
+a:hover,a:active {
+    text-decoration: underline;
+    color: red;
+}
+
+
+
+
